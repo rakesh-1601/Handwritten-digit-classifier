@@ -11,7 +11,7 @@ def image_processor(image_name):
    img = misc.imread(image_name)
    img = misc.imresize(img, (28,28))
    img = img.astype('int64')
-
+   #x_test will contain the pixels of image
    x_test = []
    for eachRow in img:
       for eachPixel in eachRow:
