@@ -20,8 +20,8 @@ def image_processor(image_name):
 
 #Setting up classifier
 train=pd.read_csv("mnist_train.csv").values
-features=train[:20000,1:]
-labels=train[:20000,0]
+features=train[:10000,1:]
+labels=train[:10000,0]
 clf = neural_network.MLPClassifier(max_iter=10000,random_state=1) #Neural network classifier
 clf.fit(features, labels)
 
